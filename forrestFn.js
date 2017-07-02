@@ -3,7 +3,6 @@ function countChar(s, c, x){
   let temp
   var count = x;
   if (s.length == 0)
-
     return count
 
   //  Increment count when c matches the last char of string

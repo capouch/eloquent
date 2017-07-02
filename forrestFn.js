@@ -1,4 +1,5 @@
 function countChar(s, c, x){
+  // Variable which was used for debugging; syntactically both below are same
   let temp
   var count = x;
   if (s.length == 0)

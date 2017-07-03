@@ -5,6 +5,8 @@ function countChar(s, c, x){
   if (s.length == 0)
     return count
 
+  // So I put in this comment
+
   //  Increment count when c matches the last char of string
   if ((s.charAt(s.length - 1)) === c){
     count++;

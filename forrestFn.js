@@ -1,3 +1,4 @@
+// Chapter 3 code example
 function countChar(s, c, x){
   // Variable which was used for debugging; syntactically both below are same
   let temp

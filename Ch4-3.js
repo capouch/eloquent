@@ -1,8 +1,9 @@
 // Linked list problem from Chapter 4 Eleoquent
 
 // Helper functions
+
+// Prepend 'element' to 'list'
 function prepend(element, list) {
-  // Prepend 'element' to 'list'
 
   // Create array which will be built each time function is called
   let temp = {}

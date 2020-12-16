@@ -11,7 +11,7 @@ const SIZE = 8,
   BLACK = '#'
 
 // Initialize variables
-  let boardString = "", boardRow = ''
+let boardString = "", boardRow = ''
 
 // One iteration per row
 for (let i = 0; i < SIZE; i++) {

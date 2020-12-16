@@ -11,11 +11,12 @@ const SIZE = 8,
   BLACK = '#'
 
 // Initialize variables
-  boardString = "", boardRow = ''
+  let boardString = "", boardRow = ''
 
 // One iteration per row
 for (let i = 0; i < SIZE; i++) {
   // Variables for two colors
+  // Note their value will be "undefined"
   let first, second
 
   // Determine which way to alternate
@@ -31,7 +32,7 @@ for (let i = 0; i < SIZE; i++) {
 
     // Now put together one row
     for (let j = 0; j < SIZE; j++)
-      if (j % 2 == 0) // Alternate
+      if (j % 2 == 0) // Alternate each pass
         boardRow += first
       else
         boardRow += second

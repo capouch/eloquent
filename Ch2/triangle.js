@@ -1,7 +1,7 @@
 /* Chapter 2 Exercises
   First exercise: print a triangle
   Brian Capouch 12/15/20
-  12/17: Add alternate solution
+  12/17: Add alternate solutions
   */
 
 const ROWMAX = 7 // What book does
@@ -24,3 +24,11 @@ let stringVal = "#"
     console.log(stringVal)
     stringVal += "#"
   } while (stringVal.length <= ROWMAX)
+
+  /* Why not?  Here's the same thing, done with a while() loop */
+
+  stringVal = '#'
+  while (stringVal.length <= ROWMAX ) {
+    console.log(stringVal)
+    stringVal += "#"
+  }

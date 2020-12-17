@@ -1,6 +1,7 @@
 /* Chapter 2 Exercises
   First exercise: print a triangle
   Brian Capouch 12/15/20
+  12/17: Add alternate solution
   */
 
 const ROWMAX = 7 // What book does
@@ -16,7 +17,7 @@ let stringVal = "#"
   */
 
   // Constant and variable are already defined up above
-  
+
   // Reset stringVal to starting value
   stringVal = "#"
   do {

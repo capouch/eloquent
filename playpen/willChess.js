@@ -10,7 +10,7 @@ const ROWMAX = 8,
  W = '-';
 
 // This one, however, MUST be a variable; its value will change
-let stringVal = "" // Safety first; set it to empty string
+let boardString = "" // Safety first; set it to empty string
 
 // Outer loop generates ROWMAX lines
 for (let i = 0; i < ROWMAX; i++) {
@@ -21,17 +21,17 @@ for (let i = 0; i < ROWMAX; i++) {
   // console.log("In inner for on pass " + j)
   if (i % 2 == 0) {
     // console.log("I am in if part of test")
-    // stringVal = (w += b);
-    stringVal += (j % 2 == 0? B : W)
-    // console.log("Even building stringVal: " + stringVal)
+    // boardString = (w += b);
+    boardString += (j % 2 == 0? B : W)
+    // console.log("Even building boardString: " + boardString)
     }
   else {
     // console.log("I am in else part of test")
-    // stringVal = (b += w);
-    stringVal += (j % 2 == 0? W : B)
-    // console.log("Odd building stringVal: " + stringVal)
+    // boardString = (b += w);
+    boardString += (j % 2 == 0? W : B)
+    // console.log("Odd building boardString: " + boardString)
     } // end if
   } // end for j
-  stringVal += "\n"
+  boardString += "\n"
 } // end for i
-console.log(stringVal)
+console.log(boardString)

@@ -14,24 +14,24 @@ let boardString = "" // Safety first; set it to empty string
 
 // Outer loop generates ROWMAX lines
 for (let i = 0; i < ROWMAX; i++) {
- // console.log("In outer for on pass " + i)
+  // console.log("In outer for on pass " + i)
 
- // Inner loop generates COLMAX columns of a single line
- for (let j = 0; j < COLMAX; j ++) {
-  // console.log("In inner for on pass " + j)
-  if (i % 2 == 0) {
-    // console.log("I am in if part of test")
-    // boardString = (w += b);
-    boardString += (j % 2 == 0 ? B : W)
-    // console.log("Even building boardString: " + boardString)
+  // Inner loop generates COLMAX columns of a single line
+  for (let j = 0; j < COLMAX; j ++) {
+    // console.log("In inner for on pass " + j)
+    if (i % 2 == 0) {
+      // console.log("I am in if part of test")
+      // boardString = (w += b);
+      boardString += (j % 2 == 0 ? B : W)
+      // console.log("Even building boardString: " + boardString)
     }
-  else {
-    // console.log("I am in else part of test")
-    // boardString = (b += w);
-    boardString += (j % 2 == 0 ? W : B)
-    // console.log("Odd building boardString: " + boardString)
-    } // end if
-  } // end for j
+    else {
+      // console.log("I am in else part of test")
+      // boardString = (b += w);
+      boardString += (j % 2 == 0 ? W : B)
+      // console.log("Odd building boardString: " + boardString)
+    } // end if
+  } // end for j
   boardString += "\n"
 } // end for i
 console.log(boardString)

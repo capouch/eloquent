@@ -2,7 +2,7 @@ let ROWMAX = 8
 let COLMAX = 8
 let b = '#'
 let w = '-';
-let stringVal = "" // Don't need to assign a value; that's done below!
+let stringVal = "" // Safety first; set it to empty string
 
 for (let i = 0; i < ROWMAX; i++) {
  // console.log("In outer for on pass " + i)

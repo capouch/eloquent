@@ -22,13 +22,13 @@ for (let i = 0; i < ROWMAX; i++) {
   if (i % 2 == 0) {
     // console.log("I am in if part of test")
     // boardString = (w += b);
-    boardString += (j % 2 == 0? B : W)
+    boardString += (j % 2 == 0 ? B : W)
     // console.log("Even building boardString: " + boardString)
     }
   else {
     // console.log("I am in else part of test")
     // boardString = (b += w);
-    boardString += (j % 2 == 0? W : B)
+    boardString += (j % 2 == 0 ? W : B)
     // console.log("Odd building boardString: " + boardString)
     } // end if
   } // end for j

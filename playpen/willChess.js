@@ -9,7 +9,7 @@ const ROWMAX = 8,
  B = '#',
  W = '-';
 
-// This one, however, MUST be a variable; it's value will change
+// This one, however, MUST be a variable; its value will change
 let stringVal = "" // Safety first; set it to empty string
 
 // Outer loop generates ROWMAX lines

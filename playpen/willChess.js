@@ -24,7 +24,8 @@ for (let i = 0; i < ROWMAX; i++) {
     // stringVal = (w += b);
     stringVal += (j % 2 == 0? B : W)
     // console.log("Even building stringVal: " + stringVal)
-    } else {
+    }
+  else {
     // console.log("I am in else part of test")
     // stringVal = (b += w);
     stringVal += (j % 2 == 0? W : B)

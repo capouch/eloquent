@@ -1,5 +1,6 @@
 /* Modify Will's code from mammoth debug session to make it work
-  Brian Capouch 12/30/20  - Do it in a compact single line
+  Brian Capouch 12/30/20  - Remove redundant conditional statement
+  Add bug
   */
 
 // Make these constants, as they will not change over the course of the

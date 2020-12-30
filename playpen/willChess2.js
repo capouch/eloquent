@@ -1,5 +1,5 @@
 /* Modify Will's code from mammoth debug session to make it work
-  Brian Capouch 12/28/20
+  Brian Capouch 12/30/20
   */
 
 // Make these constants, as they will not change over the course of the

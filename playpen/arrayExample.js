@@ -23,7 +23,7 @@ traverseList(storageArray,listHead)
 
 // We won't worry about the sorting alogirthm
 // But after it finishes, here's what the array looks like
-// Note also the three elements are all right where they were in the array
+// Note also the three elements are all right where they were at first
 let sortedArray = []
 
 // Note the original people are still right where they were!!

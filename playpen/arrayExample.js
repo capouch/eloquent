@@ -4,6 +4,7 @@
 */
 
 const traverseList = (list, first) => {
+  // Prime the pump
   let thisElement = list[first]
   do {
     console.log(thisElement.name)

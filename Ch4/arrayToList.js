@@ -1,11 +1,12 @@
 /* lists.js: Code to manipulate linked lists
    From Ch 4 Homework problem 3 in Eloquent
    Brian Capouch 25 January 2021
+   v2 27 January 2021
 */
 
 const arrayToList  = (array) => {
 
-  // Declare empty object for list
+  // Declare empty object for list-a-borning
   let listObject = {}
 
   // Prime the pump to initialize the list

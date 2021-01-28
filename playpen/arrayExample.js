@@ -26,7 +26,7 @@ traverseList(storageArray,listHead)
 // Note also the three elements are all right where they were at first
 let sortedArray = []
 
-// Note the original people are still right where they were!!
+// Note the original people  still right where they were!!
 listHead = 2 // Pointer to first entry
 sortedArray.push({name: "Calvin Klein",next: 1})
 sortedArray.push({name: "Alan Zolberg",next: null})

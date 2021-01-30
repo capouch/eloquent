@@ -18,7 +18,8 @@ let storageArray = [],
 // We can enter the elements as they come to us, out of order
 storageArray.push({name: "Calvin Klein",next: 1})
 storageArray.push({name: "Alan Zolberg",next: 2})
-storageArray.push({name: "Billy Bob",next: null})
+storageArray.push({name: "Billy Bob", next:3})
+storageArray.push({name: "Cecily Tyson",next: null})
 // IMPORTANT NOTE: We have to remember the starting node OUTSIDE of the array!!
 traverseList(storageArray,listHead)
 
@@ -29,8 +30,9 @@ let sortedArray = []
 
 // Note the original people  still right where they were!!
 listHead = 2 // Pointer to first entry
-sortedArray.push({name: "Calvin Klein",next: 1})
+sortedArray.push({name: "Calvin Klein",next: 3})
 sortedArray.push({name: "Alan Zolberg",next: null})
 sortedArray.push({name: "Billy Bob",next: 0})
+sortedArray.push({name: "Cecily Tyson", next: 1})
 console.log('\n')
 traverseList(sortedArray, listHead)

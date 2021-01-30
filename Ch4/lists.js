@@ -9,6 +9,10 @@ require ('./prepend.js')
 // console.log(nth(arrayToList([1,2,3,4,5]),42))
 // console.log(prepend(10, prepend(20, null)));
 
+// Homework: Write a find function for this listToArray
+// Such that if the element is there, it is returned as an objectString
+// Or return null if the searched-for item is not there
+
 // Right out of the book!!
 console.log(arrayToList([10, 20]));
 // → {value: 10, rest: {value: 20, rest: null}}

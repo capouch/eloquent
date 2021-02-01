@@ -31,7 +31,7 @@ for (key of keys1) {
       if (deepEqual(obj1[`${key}`],obj2[`${key}`] ) == true)
         // They are indeed themselves deeply equal; go on
         continue
-       else
+      else
         // If they're not, no reason to continue
         return false
 

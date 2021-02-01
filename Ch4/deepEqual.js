@@ -40,11 +40,11 @@ for (key of keys1) {
       continue
     } else {
       return false // They're not!!  Exit false
-    }
-  } // end if the keys exist in both
-  else
-    // Key does not exist in second object; exit false
-    return false
+      }
+    } // end if the keys exist in both
+    else
+  // Key does not exist in second object; exit false
+  return false
   } // end for
 // We're good and deeply equal
 return true

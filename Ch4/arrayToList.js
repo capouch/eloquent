@@ -27,13 +27,3 @@ const arrayToList  = (array) => {
    module.exports = arrayToList;
  if (typeof global != "undefined" && !global.arrayToList)
    global.arrayToList = arrayToList;
-
-   // I commonly put scaffolding code as a comment like This
-
-   // Convert string to object via JSON (from Stack Overflow)
-      /*
-     let jsonStr = objectString.replace(/(\w+:)|(\w+ :)/g, function(matchedStr) {
-       return '"' + matchedStr.substring(0, matchedStr.length - 1) + '":';
-       });
-     listObject = JSON.parse(jsonStr)
-     */

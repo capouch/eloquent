@@ -7,7 +7,11 @@ const deepEqual = (obj1, obj2) => {
 
 // Some low-hanging fruit before we dig in
 if (obj1 == null || obj2 == null)
-  return false // nothing can be equal to null, I think?
+  // incredibly, null is equal to null
+  if (obj1 == null && obj2 == null)
+    return true
+  else
+    return false // nothing can be equal to null, I think?
 
 // If neither is an object then directly test for eqaality
 if (typeof obj1 != 'object' && typeof obj2 != 'object')
@@ -79,3 +83,5 @@ console.log(deepEqual(i,i))
 // -> true
 console.log(deepEqual(i,null))
 // -> false
+console.log(null == null)
+// -> true!!

@@ -25,15 +25,13 @@ const find = (searchValue, list) => {
 */
 
 
-// Recursive version
+// Recursive version; very simple!!
 const find = (searchValue, list) => {
-  if (list == null)
+  // Either we exhausted the list, or we found a match
+  if (list == null || list.value == searchValue)
     return list
   else
-    if (list.value == searchValue)
-      return list
-    else
-      return find(searchValue, list.rest)
+    return find(searchValue, list.rest)
 }
 
 

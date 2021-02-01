@@ -10,7 +10,6 @@
 /*
 // Iterative version
 const find = (searchValue, list) => {
-
   // Iterate over entries looking for match
   while (list != null) {
     if (list.value == searchValue)

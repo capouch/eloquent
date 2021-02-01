@@ -28,7 +28,7 @@ const find = (searchValue, list) => {
 const find = (searchValue, list) => {
   // Either we exhausted the list, or we found a match
   if (list == null || list.value == searchValue)
-    return list
+    return list  // which might be null!
   else
     // Try again with the remainder of the list
     return find(searchValue, list.rest)

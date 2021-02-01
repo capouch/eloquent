@@ -4,14 +4,23 @@
 */
 
 const deepEqual = (obj1, obj2) => {
-  // Get the keys from each
-  let keys1 = Object.keys(obj1),
-       keys2 = Object.keys(obj2)
 
-  // Same number of keys in each?  Easy test!!
-  if (keys1.length != keys2.length)
-    // Cannot be equal!!
-    return false
+// Some low-hanging fruit before we dig in
+if (obj1 == null || obj2 == null)
+  return false // nothing can be equal to null, I think?
+
+// If neither is an object then directly test for eqaality
+if (typeof obj1 != 'object' && typeof obj2 != 'object')
+  return (obj1 === obj2)
+
+// Get the keys from each
+let keys1 = Object.keys(obj1),
+     keys2 = Object.keys(obj2)
+
+// Same number of keys in each?  Easy test!!
+if (keys1.length != keys2.length)
+  // Cannot be equal!!
+  return false
 
 /*
  Now the fun part; iterate over the keys from one
@@ -63,3 +72,10 @@ console.log(deepEqual({here: {is: "an"}}, {here: {is: "any"}}))
 // -> false
 console.log(deepEqual({here: {is: "an"}}, {here: {is: "an"}}))
 // -> true
+let i = 1, j = 1
+console.log(deepEqual(i,j))
+// -> true
+console.log(deepEqual(i,i))
+// -> true
+console.log(deepEqual(i,null))
+// -> false

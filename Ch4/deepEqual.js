@@ -36,22 +36,18 @@ for (key of keys1) {
         // If they're not, no reason to continue
         return false
 
-
-
-    // Now we deal with atomic-type properties
-    // If the values are the same, then look at the next key
+    // So both aren't objects; are their values equal?
     if (obj1[`${key}`] === obj2[`${key}`]) {
       continue
     } else {
       return false // They're not!!  Exit false
     }
-  //
   } // end if the keys exist in both
   else
     // Key does not exist in second object; exit false
     return false
   } // end for
-// We're good
+// We're good and deeply equal
 return true
 }
 

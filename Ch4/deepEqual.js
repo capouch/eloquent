@@ -24,7 +24,7 @@ const deepEqual = (obj1, obj2) => {
 // Examine each key in turn
 for (key of keys1) {
   if (key in obj2) {
-
+    // So properties match!
     // Special case if they're both objects
     if ((typeof obj1[`${key}`] == 'object') && (typeof obj2[`${key}`] == 'object'))
       // We'll need to recurse if they're both objects

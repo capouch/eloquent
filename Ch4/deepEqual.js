@@ -27,15 +27,16 @@ for (key of keys1) {
 
     // Special case if they're both objects
     // Below line is BC's little project; don't worry about  it
-    // console.log("Testing " + key  + " " + (obj1[`${key}`] === obj2[`${key}`]))
     if ((typeof obj1[`${key}`] == 'object') && (typeof obj2[`${key}`] == 'object'))
       // We'll need to recurse if they're both objects
       if (deepEqual(obj1[`${key}`],obj2[`${key}`] ) == true)
         // They are indeed themselves deeply equal; go on
         continue
-      else
+       else
         // If they're not, no reason to continue
         return false
+
+
 
     // Now we deal with atomic-type properties
     // If the values are the same, then look at the next key
@@ -63,5 +64,6 @@ console.log(deepEqual(obj, {here: 1, object: 2}));
 console.log(deepEqual(obj, {here: {is: "an"}, object: 2}));
 // → true
 console.log(deepEqual({here: {is: "an"}}, {here: {is: "any"}}))
-// -> true
+// -> false
 console.log(deepEqual({here: {is: "an"}}, {here: {is: "an"}}))
+// -> true

@@ -26,6 +26,7 @@ for (key of keys1) {
   if (key in obj2) {
 
     // Special case if they're both objects
+    // Below line is BC's little project; don't worry about  it
     // console.log("Testing " + key  + " " + (obj1[`${key}`] === obj2[`${key}`]))
     if ((typeof obj1[`${key}`] == 'object') && (typeof obj2[`${key}`] == 'object'))
       // We'll need to recurse if they're both objects

@@ -11,23 +11,30 @@ const deepEqual = (obj1, obj2) => {
     return false
 
 for (key of keys1) {
-  if (key in obj2) {
-
+  // See if keys exist in both
+  if (key in obj2)
+    // See if both properties are objects
     if ((typeof obj1[`${key}`] == 'object') && (typeof obj2[`${key}`] == 'object'))
-      if (deepEqual(obj1[`${key}`],obj2[`${key}`] ) == true)
-        continue
-      else
-        return false
+        // Call myself to test the two objects
+        if (deepEqual(obj1[`${key}`],obj2[`${key}`] ) == true)
+          continue // Go to next key
+        else
+          return false // Property is object, but two objects <> equal
+    else
+      return false // One is, one isn't an object
 
+
+    //  Properties are not objects; see if the values are equal
     if (obj1[`${key}`] === obj2[`${key}`]) {
       continue
     } else {
-      return false
+      return false  // These values aren't equal
     }
   } // end if the keys exist in both
   else
-    return false
+    return false  // Key is not in both objects
   } // end for
+// Indeed, we have deep equality 
 return true
 }
 

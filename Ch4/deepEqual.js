@@ -37,6 +37,7 @@ for (key of keys1) {
 
     // So both aren't objects; are their values equal?
     if (obj1[`${key}`] === obj2[`${key}`]) {
+      // Yep; go on to the next property
       continue
     } else {
       return false // They're not!!  Exit false

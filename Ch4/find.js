@@ -30,6 +30,7 @@ const find = (searchValue, list) => {
   if (list == null || list.value == searchValue)
     return list
   else
+    // Try again with the remainder of the list
     return find(searchValue, list.rest)
 }
 

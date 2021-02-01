@@ -17,7 +17,7 @@ require ('./find.js')
 // Right out of the book!!
 console.log(arrayToList([10, 20, 30, 40, 50, 60]));
 // → {value: 10, rest: {value: 20, rest: null}}
-console.log(find(40, arrayToList([10, 20, 30, 40, 50, 60])))
+console.log(find(30, arrayToList([10, 20, 30, 40, 50, 60])))
 // { value: 30, rest: { value: 40, rest: { value: 50, rest: {value: 60, rest: null} } } }
 console.log(listToArray(arrayToList([10, 20, 30])));
 // → [10, 20, 30]

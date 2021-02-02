@@ -1,4 +1,4 @@
-/* Deep comparison of two objects for equality
+/* Deep comparison of two parameters for equality
    From Ch 4 homework Eloquent JS
    Brian Capouch 31 January 2021
 */
@@ -11,7 +11,7 @@ if (obj1 == null || obj2 == null)
   if (obj1 == null && obj2 == null)
     return true
   else
-    return false // nothing can be equal to null, I think?
+    return false // One null, one not
 
 // If neither is an object then directly test for eqaality
 if (typeof obj1 != 'object' && typeof obj2 != 'object')

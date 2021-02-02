@@ -64,7 +64,8 @@ for (key of keys1) {
 return true
 }
 
-// Turn those tests from the book plus one of my own
+/* Moved to lists.js
+// Turn those tests from the book plus some of my own
 let obj = {here: {is: "an"}, object: 2};
 console.log(deepEqual(obj, obj));
 // → true
@@ -85,3 +86,9 @@ console.log(deepEqual(i,null))
 // -> false
 console.log(null == null)
 // -> true!!
+*/
+
+if (typeof module != "undefined" && module.exports && (typeof window == "undefined" || window.exports != exports))
+  module.exports = deepEqual;
+if (typeof global != "undefined" && !global.deepEqual)
+  global.deepEqual = deepEqual;

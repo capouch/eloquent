@@ -5,42 +5,42 @@
 
 const deepEqual = (obj1, obj2) => {
 
-// Some low-hanging fruit before we dig in
-if (obj1 == null || obj2 == null)
+  // Some low-hanging fruit before we dig in
+  if (obj1 == null || obj2 == null)
   // incredibly, null is equal to null
   if (obj1 == null && obj2 == null)
     return true
   else
     return false // One null, one not
 
-// One is an object, one not; cannot be equal
-if ((typeof obj1 == 'object' && typeof obj2 != 'object') ||
- (typeof obj2 == 'object' && typeof obj1 != 'object'))
+  // One is an object, one not; cannot be equal
+  if ((typeof obj1 == 'object' && typeof obj2 != 'object') ||
+  (typeof obj2 == 'object' && typeof obj1 != 'object'))
   return false
 
-// If neither is an object then directly test for eqaality
-if (typeof obj1 != 'object' && typeof obj2 != 'object')
+  // If neither is an object then directly test for eqaality
+  if (typeof obj1 != 'object' && typeof obj2 != 'object')
   return (obj1 === obj2)
 
-// Get the keys from each
-let keys1 = Object.keys(obj1),
+  // Get the keys from each
+  let keys1 = Object.keys(obj1),
      keys2 = Object.keys(obj2)
 
-// Same number of keys in each?  Easy test!!
-if (keys1.length != keys2.length)
+  // Same number of keys in each?  Easy test!!
+  if (keys1.length != keys2.length)
   // Cannot be equal!!
   return false
 
-/*
- Now the fun part; iterate over the keys from one
- Comparing to see if there is an equvalent in two
- If not, they're not equal; if so, same value?
- At end, if each key matches and values match, then
- they are equal
-*/
+  /*
+  Now the fun part; iterate over the keys from one
+  Comparing to see if there is an equvalent in two
+  If not, they're not equal; if so, same value?
+  At end, if each key matches and values match, then
+  they are equal
+  */
 
-// Examine each key in turn
-for (key of keys1) {
+  // Examine each key in turn
+  for (key of keys1) {
   if (key in obj2) {
     // So properties match!
     // Special case if they're both objects
@@ -65,8 +65,8 @@ for (key of keys1) {
       // Key does not exist in second object; exit false
       return false
   } // end for
-// We're good and deeply equal
-return true
+  // We're good and deeply equal
+  return true
 }
 
 /* Moved to lists.js

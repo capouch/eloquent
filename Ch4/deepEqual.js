@@ -22,7 +22,7 @@ const deepEqual = (obj1, obj2) => {
   if (typeof obj1 != 'object' && typeof obj2 != 'object')
   return (obj1 === obj2)
 
-  // Get the keys from each
+  // We're compaing two objects; get the keys from each
   let keys1 = Object.keys(obj1),
      keys2 = Object.keys(obj2)
 

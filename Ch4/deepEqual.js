@@ -15,8 +15,8 @@ const deepEqual = (obj1, obj2) => {
 
   // One is an object, one not; cannot be equal
   if ((typeof obj1 == 'object' && typeof obj2 != 'object') ||
-  (typeof obj2 == 'object' && typeof obj1 != 'object'))
-  return false
+   (typeof obj2 == 'object' && typeof obj1 != 'object'))
+    return false
 
   // If neither is an object then directly test for eqaality
   if (typeof obj1 != 'object' && typeof obj2 != 'object')

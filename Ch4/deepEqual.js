@@ -13,6 +13,11 @@ if (obj1 == null || obj2 == null)
   else
     return false // One null, one not
 
+// One is an object, one not; cannot be equal
+if ((typeof obj1 == 'object' && typeof obj2 != 'object') ||
+ (typeof obj2 == 'object' && typeof obj1 != 'object'))
+  return false
+
 // If neither is an object then directly test for eqaality
 if (typeof obj1 != 'object' && typeof obj2 != 'object')
   return (obj1 === obj2)

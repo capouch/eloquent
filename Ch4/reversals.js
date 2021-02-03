@@ -30,7 +30,7 @@ const reverseArrayInPlace = (array) => {
     // Click the ratchets
     front++
     --back
-  } // end while
+    } // end while
   }
 
 // Note difference in the way they have to be called

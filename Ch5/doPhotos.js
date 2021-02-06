@@ -8,15 +8,15 @@ require ('./photos.js')
 
 // Ok here's some things for us to work on together
 // Find any entries with the keyword 'Sunny Crest', print filename & filepath
-//console.log(PHOTOS.filter(photo => photo.tags.includes("Sunny Crest")).map(({filename, filepath}) => ({filename, filepath})))
+// console.log(PHOTOS.filter(photo => photo.tags.includes("Sunny Crest")).map(({filename, filepath}) => ({filename, filepath})))
 // How many of the photos are in the jpg format?
-// console.log(PHOTOS.reduce(acc, currentValue) => { return (currentValue.format == "jpg") ? acc++:acc },0 ))
+// console.log(PHOTOS.reduce((acc, currentValue) => { return currentValue.format == "jpg" ? ++acc : acc  },0 ))
 // Replace source names of 'Brian Capouch' with 'Brian L. Capouch'
 const insertMiddle = (name, initial) => {
-  // Here's where stuff goes
   // Note: only works with 'plain' names, i.e. one first one last
-  console.log("We got the right name!! And it is " + name)
-  return "Foo"
+  let names = name.split(" ")
+  return names.shift() + " " + initial + ". " + names.pop()
+  // console.log("We got the right name!! And it is " + name)
 }
 console.log(PHOTOS.filter(entry => entry.source == "Brian Capouch" ).map(entry => insertMiddle(entry.source, "L")))
 

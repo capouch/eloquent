@@ -14,5 +14,5 @@ console.log(PHOTOS.filter(photo => photo.format == 'jpg').map(entry => entry.fil
 // And then some things for you to work on as homework
 // 1. Add some entries with different keywords (some same) and filetypes (Shoot for 8)
 // 2. Run our "in-class" examples; make sure they work
-// 3. Print the names of all the different sources
+// 3. Print the names of all the different unique sources
 // 4. Count how many images contain a given keyword

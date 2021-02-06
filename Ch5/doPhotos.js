@@ -14,6 +14,7 @@ require ('./photos.js')
 // Replace source names of 'Brian Capouch' with 'Brian L. Capouch'
 const insertMiddle = (name, initial) => {
   // Here's where stuff goes
+  // Note: only works with 'plain' names, i.e. one first one last
   console.log("We got the right name!! And it is " + name)
   return "Foo"
 }

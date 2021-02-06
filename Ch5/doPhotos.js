@@ -1,8 +1,8 @@
 require ('./photos.js')
 // console.log(PHOTOS)
 
-// Filter out just jpg files
-console.log(PHOTOS.filter(photo => photo.format == 'jpg'))
+// Filter out just png files
+console.log(PHOTOS.filter(photo => photo.format == 'png'))
 // Now just print their names
 console.log(PHOTOS.filter(photo => photo.format == 'jpg').map(entry => entry.filename))
 

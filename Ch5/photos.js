@@ -95,6 +95,33 @@ var PHOTOS = [
     tags: "",
     source: "Brian Capouch",
     note: "to be tagged"
+  },
+  {
+    filename: "thisGonnaBeGood.gif",
+    format: "gif",
+    filepath: "/home/ajyong/IMAGES/BLOOMINGTON/thisGonnaBeGood.gif",
+    description: "Gif of a guy pulling up a chair. Commonly used in internet threads that are turning into fights",
+    tags: "troll, good, chair",
+    source: "Alex Yong",
+    note: "tagged"
+  },
+  {
+    filename: "chaosElmo.gif",
+    format: "gif",
+    filepath: "/home/ajyong/IMAGES/ORLANDO/chaosElmo.gif",
+    description: "Gif of an elmo in front of flames.",
+    tags: "elmo, seasme street, chaos, fire",
+    source: "Alex Yong",
+    note: "tagged"
+  },
+  {
+    filename: "bernieJFK.png",
+    format: "png",
+    filepath: "/home/ajyong/IMAGES/Dallas/bernieJFK.png",
+    description: "Image revealing Bernard Sanders as the lone shooter on the grassy knoll.",
+    tags: "jfk, bernard sanders, robert evans, grass knoll",
+    source: "Alex Yong",
+    note: "tagged"
   }
 ]
 
